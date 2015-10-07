@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+build/
+dist/
+MANIFEST
+
+libs/
+
+axolotl
+axolotl_curve25519.cpython-*m.so
