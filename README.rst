@@ -9,7 +9,7 @@ Description
 Pyxolotl allows you to send and receive secure end-to-end encrypted messages with 
 `perfect forward and future secrecy <https://whispersystems.org/blog/advanced-ratcheting/>`_ over
 any channel (email, IM, Twitter, Hangouts, Facebook, etc.). It uses same
-`Axolotl Ratchet <https://github.com/trevp/axolotl/wiki`_ protocol as TextSecure / Signal
+`Axolotl Ratchet <https://github.com/trevp/axolotl/wiki>`_ protocol as TextSecure / Signal
 messaging app by Open Whisper Systems.
 
 Protocol
