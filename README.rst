@@ -91,11 +91,11 @@ Help
       -e {base64,mnemonic}, --encoder {base64,mnemonic}
                             choose message encoding (default: base64)
       --log LOG             log file path (default:
-                            /home/mikos/.local/share/pyxolotl/pyxolotl.log)
+                            ~/.local/share/pyxolotl/pyxolotl.log)
       --db DB               database file path (default:
-                            /home/mikos/.local/share/pyxolotl/pyxolotl.db)
+                            ~/.local/share/pyxolotl/pyxolotl.db)
       --config CONFIG       configuration file path (default:
-                            /home/mikos/.local/share/pyxolotl/pyxolotl.json)
+                            ~/.local/share/pyxolotl/pyxolotl.json)
       --version             show program's version number and exit
     
     email transport:
