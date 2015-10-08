@@ -8,7 +8,7 @@ Description
 
 Pyxolotl allows you to send and receive secure end-to-end encrypted messages with 
 `perfect forward and future secrecy <https://whispersystems.org/blog/advanced-ratcheting/>`_ over
-any channel (email, IM, Twitter, Hangouts, Facebook, etc.). It uses same
+any channel (email, IM, IRC, Twitter, Hangouts, Facebook, etc.). It uses same
 `Axolotl Ratchet <https://github.com/trevp/axolotl/wiki>`_ protocol as TextSecure / Signal
 messaging app by Open Whisper Systems.
 
@@ -119,12 +119,15 @@ Help
 Todo:
 -----
 
-- write more transports (especially Google Hangouts, Twitter Direct Messages, Facebook Messenger and XMPP)
+- write more transports (especially Google Hangouts, Twitter Direct Messages, Facebook Messenger,
+  IRC and XMPP)
 - make email transport more complete (sending with SMTP, receiving with IMAP IDLE)
 - create IM-like console UI (with ``asyncio`` and `Urwid <http://urwid.org/>`_)
 - create IM-like Qt 5/QML based GUI
 - add support for multiple devices
 - add support for group messages
+- add support for verifying identity with question (using
+  `socialist millionaire <https://en.wikipedia.org/wiki/Socialist_millionaire>`_ protocol)
 
 Example
 -------
