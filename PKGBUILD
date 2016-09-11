@@ -1,6 +1,6 @@
 # Maintainer: Michal Krenek (Mikos) <m.krenek@gmail.com>
 pkgname=pyxolotl
-pkgver=0.1
+pkgver=0.2
 pkgrel=1
 pkgdesc="Send and receive messages encrypted with Axolotl (Double Ratchet) protocol"
 arch=('any')

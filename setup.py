@@ -11,7 +11,10 @@ setup(
     author_email="m.krenek@gmail.com",
     url="https://github.com/xmikos/pyxolotl",
     license="GNU GPLv3",
-    packages=["pyxolotl"],
+    packages=[
+        "pyxolotl", "pyxolotl.encoder", "pyxolotl.protocol", "pyxolotl.transport",
+        "pyxolotl.store", "pyxolotl.store.sqlite"
+    ],
     entry_points={
         "console_scripts": [
             "pyxolotl=pyxolotl.__main__:main"

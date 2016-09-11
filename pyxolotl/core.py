@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 class Pyxolotl:
-    """Universal Axolotl encryption"""
+    """Universal Axolotl (Double Ratchet) encryption"""
 
     # PreKeys are not used with serverless P2P communication
     COUNT_PREKEYS = 10

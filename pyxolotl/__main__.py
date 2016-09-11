@@ -176,7 +176,7 @@ def main():
     parser = argparse.ArgumentParser(
         prog='pyxolotl',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-        description='send and receive messages encrypted with Axolotl protocol'
+        description='send and receive messages encrypted with Axolotl (Double Ratchet) protocol'
     )
     parser.add_argument('-d', '--debug', action='store_true',
                         help='log detailed debugging messages')
