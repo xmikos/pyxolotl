@@ -1,7 +1,7 @@
 Pyxolotl
 ========
 
-Send and receive messages encrypted with `Axolotl <https://github.com/trevp/axolotl/wiki>`_ protocol
+Send and receive messages encrypted with `Axolotl (Double Ratchet) <https://github.com/trevp/double_ratchet/wiki>`_ protocol
 
 Description
 -----------
@@ -9,14 +9,14 @@ Description
 Pyxolotl allows you to send and receive secure end-to-end encrypted messages with 
 `perfect forward and future secrecy <https://whispersystems.org/blog/advanced-ratcheting/>`_ over
 any channel (email, IM, IRC, Twitter, Hangouts, Facebook, etc.). It uses same
-`Axolotl Ratchet <https://github.com/trevp/axolotl/wiki>`_ protocol as TextSecure / Signal
+`Axolotl (Double Ratchet) <https://github.com/trevp/double_ratchet/wiki>`_ protocol as Signal
 messaging app by Open Whisper Systems.
 
 Protocol
 --------
 
 Actual wire protocol is described
-`here <https://github.com/WhisperSystems/TextSecure/wiki/ProtocolV2>`_. Headers
+`here <https://github.com/xmikos/pyxolotl/wiki/ProtocolV2>`_. Headers
 (for differentiating between standard message and key exchange message) are obfuscated
 with 100000 iterations of PBKDF2 (with whole encrypted message used as salt). This should make
 identifying Pyxolotl messages very resource-intensive to impede mass surveillance or filtering.
@@ -27,8 +27,8 @@ Key exchange
 Pyxolotl is serverless, all messages are sent P2P, so it doesn't use
 `prekeys <https://whispersystems.org/blog/asynchronous-security/>`_. You must first send initial key
 exchange message to recipient and wait for his reply before sending actual message (this is same as
-`SMS Transport <https://github.com/WhisperSystems/TextSecure/wiki/ProtocolV2#keyexchangemessage-sms-transport-only>`_
-in older versions of TextSecure and in SMSSecure). Once this initial key exchange is completed,
+`SMS Transport <https://github.com/xmikos/pyxolotl/wiki/ProtocolV2#keyexchangemessage-sms-transport-only>`_
+in older versions of TextSecure and in SMSSecure / Silence). Once this initial key exchange is completed,
 both parties can send messages to each other without any other inconveniences. Security model is
 `TOFU <https://en.wikipedia.org/wiki/Trust_on_first_use>`_ (Trust On First Use), both parties
 should compare public keys via independent secure channel to mitigate potential MITM attack during
