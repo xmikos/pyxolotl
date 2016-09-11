@@ -6,7 +6,7 @@ from pyxolotl.version import __version__
 setup(
     name="Pyxolotl",
     version=__version__,
-    description="Send and receive messages encrypted with Axolotl protocol",
+    description="Send and receive messages encrypted with Axolotl (Double Ratchet) protocol",
     author="Michal Krenek (Mikos)",
     author_email="m.krenek@gmail.com",
     url="https://github.com/xmikos/pyxolotl",

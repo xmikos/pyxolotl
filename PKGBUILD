@@ -2,7 +2,7 @@
 pkgname=pyxolotl
 pkgver=0.1
 pkgrel=1
-pkgdesc="Send and receive messages encrypted with Axolotl protocol"
+pkgdesc="Send and receive messages encrypted with Axolotl (Double Ratchet) protocol"
 arch=('any')
 url="https://github.com/xmikos/pyxolotl"
 license=('GPL3')
